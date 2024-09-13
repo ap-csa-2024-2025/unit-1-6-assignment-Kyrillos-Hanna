@@ -7,13 +7,18 @@ public class Problem3
     decimal-=num;
     decimal*=1000;
     int number = (int) decimal;
-    System.out.println(number);
+
+    int firstNum = number % 10;
+    number/=10;
+    int secondNum = number % 10;
+    number/=10;
+    int thirdNum = number % 10;
     
-    System.out.println(number );
+    System.out.println(thirdNum);
 
-    System.out.println(number );
+    System.out.println(secondNum);
 
-    System.out.println(number );
+    System.out.println(firstNum);
     
   }
 }
